@@ -25,6 +25,11 @@ public class MenuSalas {
 		Usuario usuario3 = new Usuario ("Elia", 40, 100);
 		Usuario[] usuarios = {usuario1,usuario2,usuario3};
 		
+		SalaDeCine sala1 = new SalaDeCine("A", peli2);
+		SalaDeCine sala2 = new SalaDeCine("B", peli1);
+		
+		
+		
 		;
 		
 		System.out.println("PELICULAS:");
