@@ -4,7 +4,7 @@ public class SalaDeCine {
 	
 	// atributos
 	private String codigo;
-	private int capacidad;
+	private final int capacidad=25;
 	private Pelicula pelicula;
 	// cambio  a boolean para que las butacas solo tengan valor ocupado o libre, único tamaño [5][5]
 	private boolean butacas[][]=new boolean[5][5];
@@ -37,9 +37,7 @@ public class SalaDeCine {
 	}
 
 
-	public void setCapacidad(int capacidad) {
-		this.capacidad = capacidad;
-	}
+	
 
 
 	public Pelicula getPelicula() {
@@ -62,6 +60,12 @@ public class SalaDeCine {
 	} 
 	
 	
+	// añadimos n de buracas a comprar numeroButacas
+	public void comprarButaca(int numeroButacas) {
+		for (int i = 0; i < butacas.length; i++) {
+			for (int j=0; j< butacas[i].length; j++) {}
+		}
+	}
 	
 	
 
