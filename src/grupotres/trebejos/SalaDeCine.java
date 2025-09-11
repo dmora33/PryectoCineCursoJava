@@ -4,7 +4,7 @@ public class SalaDeCine {
 	
 	// atributos
 	private String codigo;
-	private final int capacidad=25;
+	private int capacidad=25;
 	private Pelicula pelicula;
 	// cambio  a boolean para que las butacas solo tengan valor ocupado o libre, único tamaño [5][5]
 	private boolean butacas[][]=new boolean[5][5];
@@ -62,8 +62,15 @@ public class SalaDeCine {
 	
 	// añadimos n de buracas a comprar numeroButacas
 	public void comprarButaca(int numeroButacas) {
+		int contadorcompras=0;//FIXME: comprobar que numeroButacas no es superior a las butacas libres.
 		for (int i = 0; i < butacas.length; i++) {
-			for (int j=0; j< butacas[i].length; j++) {}
+			//fatal por acabar el bucle
+			for (int j=0; j< butacas[i].length; j++) {
+				if (butacas[i][j]) {
+					butacas[i][j]=true;
+					//TODO: FALTA POR ACABAR
+				}
+			}
 		}
 	}
 	
