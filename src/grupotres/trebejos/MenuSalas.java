@@ -35,12 +35,16 @@ public class MenuSalas {
 		for (Pelicula pelicula : peliculas) {
 			pelicula.mostrarPelicula();
 			
+			
 		}
 
-		
+		for(SalaDeCine sala : salas) {
+			System.out.println(sala.getCapacidad()); //FIXME: mirar como poner la capacidad de cada sala
+		}
 		
 	}
 	
-	//
+	//METODOS
+	
 
 }
