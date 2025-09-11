@@ -2,7 +2,13 @@ package grupotres.trebejos;
 
 public class Cine {
 	
-	String nombre = "MulticinesAbaco";
-//	SalaDeCine[] Salas; 
+	private String nombre = "MulticinesAbaco";
+	private SalaDeCine[] Salas; 
+	
+	//CONSTRUCTORES
+	
+//	public Cine(SalaDeCines[] Salas) {
+//		
+//	}
 
 }
