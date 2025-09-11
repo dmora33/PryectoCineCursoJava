@@ -64,11 +64,11 @@ public class SalaDeCine {
 	public void comprarButaca(int numeroButacas) {
 		int contadorcompras=0;//FIXME: comprobar que numeroButacas no es superior a las butacas libres.
 		for (int i = 0; i < butacas.length; i++) {
-			
+			//fatal por acabar el bucle
 			for (int j=0; j< butacas[i].length; j++) {
 				if (butacas[i][j]) {
 					butacas[i][j]=true;
-					
+					//TODO: FALTA POR ACABAR
 				}
 			}
 		}
