@@ -2,9 +2,9 @@ package grupotres.trebejos;
 
 public class Usuario {
 
-	String nombre;
-	int edad;
-	double saldo;
+	private String nombre;
+	private int edad;
+	private double saldo;
 	
 	
 	
