@@ -62,7 +62,7 @@ public class Pelicula {
 	
 	
 
-	public void mostrarPelicula(Pelicula peli) {
+	public void mostrarPelicula() {
 		System.out.println("Pelicula:\t" + pelicula + "\nClasificación:\t" + clasificaion + "\nDuración:\t"
 				+ this.duración + "\nPrecio:\t" + this.precio + "\nIdentificador:\t" + this.id);
 	}

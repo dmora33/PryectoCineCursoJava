@@ -1,9 +1,10 @@
 package grupotres.trebejos;
 
+import java.util.Scanner;
+
 public class Utilidades {
-	public Peliculas crearPelicula() {
-		
-		return pelicula;
+	public void  crearPelicula() {
+		Scanner sacan = new 
 	}
 
 }
