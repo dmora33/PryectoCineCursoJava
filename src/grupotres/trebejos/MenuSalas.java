@@ -27,10 +27,9 @@ public class MenuSalas {
 		
 		SalaDeCine sala1 = new SalaDeCine("A", peli2);
 		SalaDeCine sala2 = new SalaDeCine("B", peli1);
+		SalaDeCine sala3 = new SalaDeCine("C", peli2);
+		SalaDeCine[] salas= {sala1, sala2, sala3};
 		
-		
-		
-		;
 		
 		System.out.println("PELICULAS:");
 		for (Pelicula pelicula : peliculas) {
