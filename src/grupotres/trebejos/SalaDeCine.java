@@ -12,13 +12,13 @@ public class SalaDeCine {
 	
 	//  CONSTRUTOR
 
-	
-	public SalaDeCine(String codigo, Pelicula pelicula) {
+
+	public SalaDeCine(String codigo,Pelicula pelicula) {
 		super();
 		this.codigo = codigo;
-		this.capacidad = capacidad;
+		
 		this.pelicula = pelicula;
-		this.butacas = butacas;
+		
 	}
 	//	get and set
 	
