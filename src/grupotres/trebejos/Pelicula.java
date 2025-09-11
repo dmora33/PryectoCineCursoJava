@@ -44,15 +44,12 @@ public class Pelicula {
 		return clasificaion;
 	}
 
-	public void setClasificaion(String clasificaion) {
-		this.clasificaion = clasificaion;
-	}
-
+	
 	public double getPrecio() {
 		return precio;
 	}
 
-	public void setPrecio(double precio) {
+	public void Precio(double precio) {
 		this.precio = precio;
 	}
 
@@ -60,11 +57,10 @@ public class Pelicula {
 		return id;
 	}
 
-	public void setId(int id) {
-		this.id = id;
-	}
-
+	
 	// METODOS
+	
+	
 
 	public void mostrarPelicula(Pelicula peli) {
 		System.out.println("Pelicula:\t" + pelicula + "\nClasificación:\t" + clasificaion + "\nDuración:\t"
