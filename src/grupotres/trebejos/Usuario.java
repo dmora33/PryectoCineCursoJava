@@ -10,8 +10,10 @@ public class Usuario {
 	
 	//CONSTRUCTOR
 	
-	public Usuario(String nombre) {
+	public Usuario(String nombre, int edad, double saldo) {
 		this.nombre = nombre;
+		this.edad = edad;
+		this.saldo= saldo;
 	}
 
 
@@ -24,15 +26,15 @@ public class Usuario {
 
 
 
-	public void setNombre(String nombre) {
-		this.nombre = nombre;
-	}
+//	public void setNombre(String nombre) {
+//		this.nombre = nombre;
+//	}
 	
 
 	//METODOS 
 	
 	public void muestraUsuario() {
-		System.out.println( nombre);
+		System.out.println("NOMBRE: " + nombre + "\nEDAD: " + edad + "\nSaldo: " + saldo);
 	}
 	
 }
