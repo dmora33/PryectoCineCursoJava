@@ -13,12 +13,12 @@ public class SalaDeCine {
 	//  CONSTRUTOR
 
 	
-	public SalaDeCine(String codigo, int capacidad, Pelicula pelicula, boolean[][] butacas) {
+	public SalaDeCine(String codigo,Pelicula pelicula) {
 		super();
 		this.codigo = codigo;
-		this.capacidad = capacidad;
+		
 		this.pelicula = pelicula;
-		this.butacas = butacas;
+		
 	}
 	//	get and set
 	
