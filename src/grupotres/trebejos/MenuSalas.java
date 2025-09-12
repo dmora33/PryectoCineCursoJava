@@ -6,7 +6,7 @@ public class MenuSalas {
 	public static void main(String[] args) {
 		
 
-		
+		String separador = "-----------------------------";
 		
 		
 		
@@ -31,15 +31,19 @@ public class MenuSalas {
 		SalaDeCine[] salas= {sala1, sala2, sala3};
 		
 		
-		System.out.println("PELICULAS:");
-		for (Pelicula pelicula : peliculas) {
-			pelicula.mostrarPelicula();
-			
-			
-		}
+		
 
 		for(SalaDeCine sala : salas) {
-			System.out.println(sala.getCapacidad()); //FIXME: mirar como poner la capacidad de cada sala
+			System.out.println(separador);
+			System.out.println("\n\nSALA: " + sala.getCodigo() + "\nCapacidad:" + sala.getCapacidad());
+			
+			sala.getPelicula().mostrarPelicula();
+			System.out.println(separador);
+//			for (Pelicula pelicula : peliculas) {
+//				pelicula.mostrarPelicula();
+//				
+//				
+//			}
 		}
 		
 	}
