@@ -35,9 +35,8 @@ public class SalaDeCine {
 		}
 	}
 
-	public SalaDeCine(String codigoSala, int capacidadSala, Pelicula peliculaSala) {
+	public SalaDeCine(String codigoSala, Pelicula peliculaSala) {
 		super();
-		this.codigoSala = codigoSala;
 		this.capacidadSala = capacidadSala;
 		this.peliculaSala = peliculaSala;
 	}
