@@ -28,6 +28,7 @@ public class SalaDeCine {
 						butacas[i][j] = true;
 						capacidadSala--;
 						contadorEntradas++;
+						System.out.println("comprado una entrada");
 						// TODO: FALTA POR ACABAR
 					}
 				}
