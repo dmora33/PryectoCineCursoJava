@@ -16,7 +16,7 @@ public class SalaDeCine {
 	// el bucle el número de entrdas concreto.
 	public void comprarButaca(int numeroButacas) {
 
-		int contadorEntradas = numeroButacas;
+		int contadorEntradas = 0;
 
 //comprobar que el numero de but que queremos comprar no es mayor a las disponibles.
 		if (numeroButacas <= capacidadSala && contadorEntradas <= numeroButacas) {
@@ -24,7 +24,7 @@ public class SalaDeCine {
 			for (int i = 0; i < butacas.length; i++) {
 				// fatal por acabar el bucle
 				for (int j = 0; j < butacas[i].length; j++) {
-					if (butacas[i][j]) {
+					if (!butacas[i][j] && numeroButacas > contadorEntradas) {
 						butacas[i][j] = true;
 						capacidadSala--;
 						contadorEntradas++;

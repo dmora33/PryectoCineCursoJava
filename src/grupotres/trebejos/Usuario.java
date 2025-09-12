@@ -5,37 +5,36 @@ public class Usuario {
 	private String nombre;
 	private int edad;
 	private double saldo;
-	
-	
-	
-	//CONSTRUCTOR
-	
+
+	// CONSTRUCTOR
+
 	public Usuario(String nombre, int edad, double saldo) {
 		this.nombre = nombre;
 		this.edad = edad;
-		this.saldo= saldo;
+		this.saldo = saldo;
 	}
 
+	// GET&SET
 
-
-	//GET&SET
-	
 	public String getNombre() {
 		return nombre;
 	}
 
-
-
 //	public void setNombre(String nombre) {
 //		this.nombre = nombre;
 //	}
-	
 
-	//METODOS 
-	
+	// METODOS
+
 	public void muestraUsuario() {
 		System.out.println("NOMBRE: " + nombre + "\nEDAD: " + edad + "\nSaldo: " + saldo);
 	}
-	
+	public void inicioUsuario() {
+		
+		// TODO Usuario usuario = new Usuario(nombre, edad, saldo)
+		
+		System.out.println("Dime tu nombre;");
+		
+		 
+	}
 }
-

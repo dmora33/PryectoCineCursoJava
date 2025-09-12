@@ -24,6 +24,8 @@ public class MenuSalas {
 		SalaDeCine sala3 = new SalaDeCine("C", peli2);
 		SalaDeCine[] salas = { sala1, sala2, sala3 };
 
+		sala1.comprarButaca(3);
+		
 		for (SalaDeCine sala : salas) {
 			System.out.println(separador);
 			System.out.println("\n\nSALA: " + sala.getCodigoSala() + "\nCapacidad:" + sala.getCapacidadSala());
