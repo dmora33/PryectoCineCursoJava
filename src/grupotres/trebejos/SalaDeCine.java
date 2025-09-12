@@ -35,12 +35,11 @@ public class SalaDeCine {
 		}
 	}
 
-	public SalaDeCine(String codigoSala, int capacidadSala, Pelicula peliculaSala, boolean[][] butacas) {
+	public SalaDeCine(String codigoSala, int capacidadSala, Pelicula peliculaSala) {
 		super();
 		this.codigoSala = codigoSala;
 		this.capacidadSala = capacidadSala;
 		this.peliculaSala = peliculaSala;
-		this.butacas = butacas;
 	}
 
 	public int getCapacidadSala() {
