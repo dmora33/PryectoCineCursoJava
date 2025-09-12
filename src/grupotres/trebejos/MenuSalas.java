@@ -35,9 +35,9 @@ public class MenuSalas {
 
 		for(SalaDeCine sala : salas) {
 			System.out.println(separador);
-			System.out.println("\n\nSALA: " + sala.getCodigo() + "\nCapacidad:" + sala.getCapacidad());
+			System.out.println("\n\nSALA: " + sala.getCodigoSala() + "\nCapacidad:" + sala.getCapacidadSala());
 			
-			sala.getPelicula().mostrarPelicula();
+			sala.getPeliculaSala().mostrarPelicula();
 			System.out.println(separador);
 //			for (Pelicula pelicula : peliculas) {
 //				pelicula.mostrarPelicula();
