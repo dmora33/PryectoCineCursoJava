@@ -59,9 +59,14 @@ public class Pelicula {
 
 	
 	// METODOS
-	
-	
+	public static Pelicula[] crearPelicula(){
+		Pelicula peli1 = new Pelicula("Dragon BaLL", 110, "+16", 8.50, 01);
+		Pelicula peli2 = new Pelicula("El regreso de los Saian", 115, "+16", 8.55, 01);
+		Pelicula[] peliculas = { peli1, peli2 };
+		return peliculas;
 
+	}
+	
 	public void mostrarPelicula() {
 
 		System.out.println("\nPelicula:\t" + pelicula + "\nClasificación:\t" + clasificaion + "\nDuración:\t"

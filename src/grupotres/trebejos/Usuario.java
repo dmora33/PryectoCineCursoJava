@@ -15,11 +15,21 @@ public class Usuario {
 		this.edad = edad;
 		this.saldo = saldo;
 	}
+	public Usuario() {
+		
+	}
 
 	// GET&SET
 
 	public String getNombre() {
 		return nombre;
+	}
+	
+	public int getEdad() {
+		return edad;
+	}
+	public double getSaldo() {
+		return saldo;
 	}
 
 //	public void setNombre(String nombre) {
@@ -29,17 +39,31 @@ public class Usuario {
 	// METODOS
 
 	public void muestraUsuario() {
-		System.out.println("NOMBRE: " + nombre + "\nEDAD: " + edad + "\nSaldo: " + saldo);
+		System.out.println("USUARIO:\n\tNombre:\t" + nombre + "\n\tEdad:\t" + edad + "\n\tSaldo:\t" + saldo);
 	}
+	
+//	public void crearUsuario() {
+//
+//		Usuario usuario = new Usuario(this.nombre, this.edad, this.saldo);
+//	}
 
-	public Usuario inicioUsuario() {
+	
+	
+	
+	public static String pedirNombre() {
 		System.out.println("Bien benido!\nVamos a pedirte tus datos personales;\n \nEscribe tu nónmbre:");
 		Scanner scan = new Scanner(System.in);
 		String nombre = scan.next();
-		
-		// primero empezamos con las validaciones de los datos NOMBRE
 		nombre= nombre.strip();
+		return nombre;
+	}
+	
+	
+	
+	
+	public static int pedirEdad() {
 		System.out.println("Escribre tu edad:");
+		Scanner scan = new Scanner(System.in);
 		scan = new Scanner(System.in);
 		int edad = scan.nextInt();
 		while ( edad<0 && edad>120) {
@@ -49,18 +73,42 @@ public class Usuario {
 			scan = new Scanner(System.in);
 			edad = scan.nextInt();
 		}
+
+		return edad;
+	}
+	
+	
+	
+
+	public static double pedirSaldo() {
+		
 		System.out.println("Cuanto saldo quieres vas a añadir a tu cuenta:");
+
+		Scanner scan = new Scanner(System.in);
 		scan = new Scanner(System.in);
-		int saldo = scan.nextInt();
-		if (saldo=<0) { 
+		double saldo = scan.nextInt();
+		if (saldo>=0) { 
 			// TODO por acabar
 			
 			
+			
 		}
-		Usuario usuario = new Usuario(nombre, edad, saldo);
+		return saldo;
 		
-		System.out.println("Dime tu nombre;");
-		
-		 
 	}
+	
+	
+	
+	public static Usuario crearUsuario() {
+		Usuario usuario = new Usuario(pedirNombre(), pedirEdad(), pedirSaldo());
+		System.out.println(usuario.getEdad());
+		return usuario;
+	}
+	
+	
+	
+	
+	
+	
+	
 }
