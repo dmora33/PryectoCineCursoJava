@@ -23,7 +23,7 @@ public class MenuSalas {
 		
 
 		
-
+//TODO: tenemos que hacer un metodo para que los usuarios segun se creen se les sume contador al nomebre.
 		Usuario usuario = Usuario.crearUsuario() ; //Crea el usuario
 		usuario.muestraUsuario();	
 		//Muestra los datos del usuario creado
