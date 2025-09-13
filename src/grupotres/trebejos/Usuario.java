@@ -53,6 +53,7 @@ public class Usuario {
 		System.out.println("Bien benido!\nVamos a pedirte tus datos personales;\n \nEscribe tu nónmbre:");
 		Scanner scan = new Scanner(System.in);
 		String nombre = scan.next();
+		// quitamos los espacios tanto de alante como de atras
 		nombre = nombre.strip();
 		return nombre;
 	}
