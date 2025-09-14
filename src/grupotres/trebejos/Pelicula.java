@@ -2,7 +2,7 @@ package grupotres.trebejos;
 
 public class Pelicula {
 
-	private String pelicula;
+	private String titulo;
 	private int duración; // lo pongo como int por que especifica en minutos!!!!
 	private String clasificaion; // string para no tener que estar añadiedo un + cadavez q queremos mostrar
 	private double precio; // double para poder ganar centimillos...
@@ -15,21 +15,21 @@ public class Pelicula {
 	 * @param precio       double
 	 * @param id           int
 	 */
-	public Pelicula(String pelicula, int duración, String clasificaion, double precio, int id) {
+	public Pelicula(String titulo, int duración, String clasificaion, double precio, int id) {
 		super();
-		this.pelicula = pelicula;
+		this.titulo = titulo;
 		this.duración = duración;
 		this.clasificaion = clasificaion;
 		this.precio = precio;
 		this.id = id;
 	}
 
-	public String getPelicula() {
-		return pelicula;
+	public String getTitulo() {
+		return titulo;
 	}
 
-	public void setPelicula(String pelicula) {
-		this.pelicula = pelicula;
+	public void setPelicula(String titulo) {
+		this.titulo = titulo;
 	}
 
 	public int getDuración() {
@@ -44,7 +44,6 @@ public class Pelicula {
 		return clasificaion;
 	}
 
-	
 	public double getPrecio() {
 		return precio;
 	}
@@ -57,19 +56,18 @@ public class Pelicula {
 		return id;
 	}
 
-	
 	// METODOS
-	public static Pelicula[] crearPelicula(){
+	public static Pelicula[] crearPelicula() {
 		Pelicula peli1 = new Pelicula("Dragon BaLL", 110, "+16", 8.50, 01);
 		Pelicula peli2 = new Pelicula("El regreso de los Saian", 115, "+16", 8.55, 01);
 		Pelicula[] peliculas = { peli1, peli2 };
 		return peliculas;
 
 	}
-	
+
 	public void mostrarPelicula() {
 
-		System.out.println("\nPelicula:\t" + pelicula + "\nClasificación:\t" + clasificaion + "\nDuración:\t"
+		System.out.println("\nTitulo:\t" + titulo + "\nClasificación:\t" + clasificaion + "\nDuración:\t"
 				+ this.duración + "\nPrecio:\t\t" + this.precio + "\nIdentificador:\t" + this.id);
 
 	}
