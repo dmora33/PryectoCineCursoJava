@@ -4,7 +4,7 @@ public class Pelicula {
 
 	private String titulo;
 	private int duración; // lo pongo como int por que especifica en minutos!!!!
-	private String clasificaion; // string para no tener que estar añadiedo un + cadavez q queremos mostrar
+	private int clasificaion; // int entonces hay que poner un + cadavez q queremos mostrar
 	private double precio; // double para poder ganar centimillos...
 	private int id; // único para cada película.
 
@@ -15,7 +15,7 @@ public class Pelicula {
 	 * @param precio       double
 	 * @param id           int
 	 */
-	public Pelicula(String titulo, int duración, String clasificaion, double precio, int id) {
+	public Pelicula(String titulo, int duración, int clasificaion, double precio, int id) {
 		super();
 		this.titulo = titulo;
 		this.duración = duración;
@@ -40,7 +40,7 @@ public class Pelicula {
 		this.duración = duración;
 	}
 
-	public String getClasificaion() {
+	public int getClasificaion() {
 		return clasificaion;
 	}
 
@@ -58,8 +58,8 @@ public class Pelicula {
 
 	// METODOS
 	public static Pelicula[] crearPelicula() {
-		Pelicula peli1 = new Pelicula("Dragon BaLL", 110, "+18", 8.50, 01);
-		Pelicula peli2 = new Pelicula("El regreso de los Saian", 115, "todas las edades", 8.55, 01);
+		Pelicula peli1 = new Pelicula("Dragon BaLL", 110, 18 , 8.50, 01);
+		Pelicula peli2 = new Pelicula("El regreso de los Saian", 115, 0 , 8.55, 01);
 		Pelicula[] peliculas = { peli1, peli2 };
 		return peliculas;
 
@@ -67,7 +67,7 @@ public class Pelicula {
 
 	public void mostrarPelicula() {
 
-		System.out.println("\nTitulo:\t" + titulo + "\nClasificación:\t" + clasificaion + "\nDuración:\t"
+		System.out.println("\nTitulo:\t" + titulo + "\nClasificación:\t+" + clasificaion + "\nDuración:\t"
 				+ this.duración + "\nPrecio:\t\t" + this.precio + "\nIdentificador:\t" + this.id);
 
 	}
