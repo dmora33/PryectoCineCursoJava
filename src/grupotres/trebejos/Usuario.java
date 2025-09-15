@@ -95,6 +95,18 @@ public class Usuario {
 		return saldo;
 
 	}
+	
+	public boolean validarEdadClasificacion(Usuario usuario, Pelicula pelicula) {
+		boolean puedeComprar;
+		if(usuario.getEdad() >= pelicula.getClasificacion()) {
+			puedeComprar = true; //true significa que puede comprar una pelicula por su edad
+		}
+		else {
+			puedeComprar = false;
+			System.err.println("Niñato crece"); //false es que la peli necesita un edad mayor al que tiene el usuario para comprar la pelicula
+		}
+		return puedeComprar;
+	}
 
 	public static Usuario crearUsuario() {
 		Usuario usuario = new Usuario(pedirNombre(), pedirEdad(), pedirSaldo());

@@ -5,7 +5,6 @@ import java.util.Scanner;
 public class SalaDeCine {
 
 	// atributos
-
 	String separador = "\n-----------------------------";
 	private String codigoSala;
 	private int capacidadSala = 25;
@@ -118,6 +117,7 @@ public class SalaDeCine {
 		}
 
 	}
+	
 
 	public void verTodasLasSalas() {
 		System.out.println(separador);

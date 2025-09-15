@@ -8,25 +8,11 @@ public class MenuSalas {
 		String separador = "-----------------------------";
 
 		Cine cine = new Cine();
-//
-//		Pelicula peli1 = new Pelicula("Dragon BaLL", 110, "+16", 8.50, 01);
-//		Pelicula peli2 = new Pelicula("El regreso de los Saian", 115, "+16", 8.55, 01);
-//		Pelicula[] peliculas = { peli1, peli2 };
-
-//		Usuario usuario1 = new Usuario("Dani", 13, 20);
-//
-//		Usuario usuario2 = new Usuario("Juan", 20, 100);
-//		Usuario usuario3 = new Usuario("Elia", 40, 100);
-//		
-//		
-//		Usuario[] usuarios = { usuario1, usuario2, usuario3 };
 		
 
-		
 //TODO: tenemos que hacer un metodo para que los usuarios segun se creen se les sume contador al nomebre.
 		Usuario usuario = Usuario.crearUsuario() ; //Crea el usuario
-		usuario.muestraUsuario();	
-		//Muestra los datos del usuario creado
+		usuario.muestraUsuario();//Muestra los datos del usuario creado
 
 		
 		SalaDeCine [] salas = SalaDeCine.crearSala();
@@ -38,15 +24,29 @@ public class MenuSalas {
 		int numeroEntradaDeseado = SalaDeCine.pedirCantidadEntradas();
 		
 		System.out.println("\nSalas disponibles con tu cantidad de personas:");
+		
 		for (SalaDeCine salaDeCine : salas) {
-			salaDeCine.verSalasDisponibles(numeroEntradaDeseado);	//SOLO sale b y c pq no hay espacio disponible en sala a
-		}
+//			if(usuario.validarEdadClasificacion(usuario, salaDeCine.getPeliculaSala()) == true) { //solo si el usuario es mayor de lo que permite la pelicula le sale como opcion
+				salaDeCine.verSalasDisponibles(numeroEntradaDeseado);
+			}	//SOLO sale b y c pq no hay espacio disponible en sala a
+//		}
+		
+		Pelicula.elegirPelicula(usuario);
 		
 		
-
 	}
 
 	// METODOS
-	
+//	public boolean validarEdadClasificacion(Usuario usuario, Pelicula pelicula) {
+//		boolean puedeComprar;
+//		if(usuario.getEdad() >= pelicula.getClasificaion()) {
+//			puedeComprar = true; //true significa que puede comprar una pelicula por su edad
+//		}
+//		else {
+//			puedeComprar = false;
+//			System.err.println("Niñato crece"); //false es que la peli necesita un edad mayor al que tiene el usuario para comprar la pelicula
+//		}
+//		return puedeComprar;
+//	}
 	
 }
