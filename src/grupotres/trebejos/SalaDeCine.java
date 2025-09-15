@@ -55,14 +55,17 @@ public class SalaDeCine {
 
 	// METODOS
 
-	public void comprarButaca(int numeroEntradaDeseado) {
+	public void comprarButaca(int numeroEntradaDeseado, int edad, int clasificacion) {
 
 		int contadorEntradas = 0;
 
 //comprobar que el numero de but que queremos comprar no es mayor a las disponibles.
-		if (numeroEntradaDeseado <= capacidadSala && contadorEntradas <= numeroEntradaDeseado) {
+
+		if (numeroEntradaDeseado <= capacidadSala && contadorEntradas <= numeroEntradaDeseado && edad >= clasificacion) {
 			// entonces podemos cambiar el estado de las butacas
+			
 			for (int i = 0; i < butacas.length; i++) {
+				
 				// fatal por acabar el bucle
 				for (int j = 0; j < butacas[i].length; j++) {
 					if (!butacas[i][j] && numeroEntradaDeseado > contadorEntradas) {
