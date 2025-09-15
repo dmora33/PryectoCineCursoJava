@@ -66,8 +66,10 @@ public class SalaDeCine {
 				// fatal por acabar el bucle
 				for (int j = 0; j < butacas[i].length; j++) {
 					if (!butacas[i][j] && numeroEntradaDeseado > contadorEntradas) {
+						
 						butacas[i][j] = true;
 						capacidadSala--;
+						
 						contadorEntradas++;
 //						System.out.println("comprado una entrada");
 						// TODO: FALTA POR ACABAR
@@ -83,7 +85,7 @@ public class SalaDeCine {
 		SalaDeCine sala3 = new SalaDeCine("C", Pelicula.crearPelicula()[0]);
 		SalaDeCine[] salas = { sala1, sala2, sala3 };
 
-		sala1.comprarButaca(5); // Para que inicie la sala 1 con butacas ya ocupadas
+	//	sala1.comprarButaca(5); // Para que inicie la sala 1 con butacas ya ocupadas
 		return salas;
 	}
 
