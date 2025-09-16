@@ -84,7 +84,7 @@ public class Pelicula {
 		int peliCantidad = crearPelicula().length;
 		for (Pelicula pelicula : peliculas) {
 				if(peliElegido == j) {
-					if(usuario.getEdad() == crearPelicula()[i].getClasificacion() ) {
+					if(usuario.getEdad() >= crearPelicula()[i].getClasificacion() ) {
 					System.out.println("Has elegido la pelicula " + crearPelicula()[i].getTitulo());
 					} else {
 						System.err.println("Eres demasiado joven para esta pelicula");
