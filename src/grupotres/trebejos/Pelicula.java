@@ -74,6 +74,13 @@ public class Pelicula {
 
 	}
 	
+	public double calcularPrecioTotalEntradas() {
+		int numeroEntradasDeseados = 1;
+		numeroEntradasDeseados = SalaDeCine.pedirCantidadEntradas();
+		double precioTotalEntradas = numeroEntradasDeseados*this.precio;
+		return precioTotalEntradas;
+	}
+	
 	public static void elegirPelicula(Usuario usuario) {
 		Pelicula[] peliculas = crearPelicula();
 		System.out.println("Que pelicula quieres ver?\n\tPORFAVOR ESCRIBE EL ID DE LA PELICULA"  );
@@ -84,6 +91,9 @@ public class Pelicula {
 		int peliCantidad = crearPelicula().length;
 		for (Pelicula pelicula : peliculas) {
 				if(peliElegido == j) {
+					if(usuario.getSaldo()<= pelicula.calcularPrecioTotalEntradas()) {
+						System.out.println("No tienes suficiente dinero en tu saldo");
+					}
 					if(usuario.getEdad() >= crearPelicula()[i].getClasificacion() ) {
 					System.out.println("Has elegido la pelicula " + crearPelicula()[i].getTitulo());
 					} else {
@@ -95,6 +105,8 @@ public class Pelicula {
 				i++;
 				j++;
 		}
+		
+		
 //		while (i< peliCantidad) {
 //			if(peliElegido) {
 //				if(peliElegido == j) {

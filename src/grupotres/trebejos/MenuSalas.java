@@ -37,6 +37,8 @@ public class MenuSalas {
 	}
 
 	// METODOS
+	
+	
 //	public boolean validarEdadClasificacion(Usuario usuario, Pelicula pelicula) {
 //		boolean puedeComprar;
 //		if(usuario.getEdad() >= pelicula.getClasificaion()) {
